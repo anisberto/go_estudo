@@ -2,7 +2,10 @@ module github.com/api_go_opp
 
 go 1.20
 
-require github.com/gin-gonic/gin v1.9.1
+require (
+	github.com/gin-gonic/gin v1.9.1
+	golang.org/x/exp v0.0.0-20231206192017-f3f8817b8deb
+)
 
 require (
 	github.com/bytedance/sonic v1.9.1 // indirect

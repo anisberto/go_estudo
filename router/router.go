@@ -1,6 +1,9 @@
 package router
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+	"golang.org/x/exp/slog"
+)
 
 func Init() {
 	router := gin.Default()
@@ -9,7 +12,7 @@ func Init() {
 	err := router.Run(":8080")
 
 	if err != nil {
-		return
+		slog.Error("Error during initialize server, ", err)
 	}
 
 }
