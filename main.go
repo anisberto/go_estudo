@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	slog.Info("Initialize a Application ...")
+	slog.Info("Iniciando a aplicação...")
 	router.Init()
 }
